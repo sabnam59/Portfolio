@@ -3,15 +3,15 @@ import React from 'react'
 const About = () => {
   return (
     <div>
-      <section class="bg-black text-white">
-        <div class="flex justify-center">
-          <div class=" font-bold text-5xl mb-20 mt-10">
-            <h1 class="uppercase">about me</h1>
+      <section className="bg-black text-white">
+        <div className="flex justify-center">
+          <div className=" font-bold text-5xl mb-20 mt-10">
+            <h1 className="uppercase">about me</h1>
           </div>
         </div>
 
-        <div class="grid grid-cols-2  gap-20 py-20  px-38">
-          <div class="border border-2 rounded-xl px-7 py-15 mb-10 border-white">
+        <div className="grid grid-cols-2  gap-20 py-20  px-38">
+          <div className="border-2 rounded-xl px-7 py-15 mb-10 border-white">
             <p>
               Hello! I’m <strong>Sabnam Karrki , </strong>a passionate Frontend
               Developer with a keen eye for detail and a love for creating
@@ -24,7 +24,7 @@ const About = () => {
             </p>
           </div>
 
-          <div class="border border-2 border-white rounded-xl px-7 py-15 mb-10">
+          <div className="border-2 border-white rounded-xl px-7 py-15 mb-10">
             <p>
               I’m constantly learning and keeping up-to-date with the latest
               trends and technologies in the frontend ecosystem, always striving
