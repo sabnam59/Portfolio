@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -10,8 +10,9 @@ const Home = () => {
           style={{
             backgroundImage: "url('/images/myphoto1.png')",
             height: "300px",
+            width: "280px",
             backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundPosition: "left",
           }}
         ></div>
 
@@ -88,6 +89,6 @@ const Home = () => {
       </div>
     </>
   );
-}
+};
 
-export default Home
+export default Home;
