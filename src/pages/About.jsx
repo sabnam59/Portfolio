@@ -17,7 +17,9 @@ const About = () => {
 
   return (
 
-    <div className="grid grid-cols-2 bg-black text-white py-40 px-52 gap-32 h-screen">
+    <div className="grid grid-cols-1 lg:grid-cols-2 bg-black text-white lg:py-44 xl:px-52 xl:gap-32 lg:h-screen *
+    py-20 px-5 gap-16 md:py-32 md:px-24 md:gap-24 lg:px-14
+    ">
       {aboutContent.map((about) => (
         <Aboutcard description={about.Aboutdescription} />
       ))}

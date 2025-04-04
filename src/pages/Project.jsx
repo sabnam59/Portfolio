@@ -39,7 +39,7 @@ const Project = () => {
       },
     ];
   return (
-    <div className="bg-black text-white grid grid-cols-2 gap-20 px-36 py-20">
+    <div className="bg-black text-white grid grid-cols-1 md:grid-cols-2 gap-20 xl:px-52 py-20 px-8 xl:gap-40 lg:px-24 lg:gap-32">
       {
       myProject.map((projects) => (
         <Card

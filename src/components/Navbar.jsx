@@ -41,7 +41,7 @@ const Navbar = () => {
 
               {/* <!-- PAGES DROPDOWN ON HOVER --> */}
               <div className="absolute border rounded-lg mt-o.5 z-10 left-0 top-full hidden w-25 bg-white text-black  group-hover:block">
-                <ul className="py-2 text-sm">
+                <ul className="py-2 text-sm lg:text-xl">
                   <li>
                     <Link
                       to="/pages/blog"

@@ -115,7 +115,7 @@ const Blog = () => {
 
   return (
     <>
-      <div className="grid grid-cols-3 px-10 py-14 bg-black text-white gap-20 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 px-10 py-20 bg-black text-white gap-24 ">
       
         {myBlogs.map((blog) => (
           // we have to show each blog in card
