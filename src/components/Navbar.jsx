@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-
   const [hamburgerMenu, sethamburgerMenu] = useState(false);
 
   const handleClick = () => {
@@ -13,16 +12,14 @@ const Navbar = () => {
   return (
     <>
       <nav className="sticky top-0 z-50 bg-black text-white">
-        
         {/* Desktop */}
-        <div className="bg-black text-white justify-between pl-40 pr-18 shadow py-10 hidden md:flex">
-          <div className="bold text-4xl flex items-center">Sabnam</div>
+        <div className="bg-black text-white lg:justify-between xl:pl-40 pl-20 pr-10 xl:pr-16 md:justify-evenly shadow py-10 hidden md:flex">
+          <div className="bold text-5xl lg:text-4xl flex items-center md:hidden lg:flex">
+            Sabnam
+          </div>
 
-          <div className="md:flex gap-10 uppercase sm:hidden  text-white">
-            <Link
-              to="/"
-              className="hover:text-amber-400 self-center hover:underline underline-offset-6 decoration-white"
-            >
+          <div className="md:flex gap-10 uppercase sm:hidden  text-white xl:text-xl">
+            <Link to="/" className="hover:text-amber-400 self-center">
               Home
             </Link>
             <Link
@@ -47,7 +44,7 @@ const Navbar = () => {
                 <ul className="py-2 text-sm">
                   <li>
                     <Link
-                      to="#"
+                      to="/pages/blog"
                       className="block hover:bg-gray-300 hover:font-semibold px-4 py-2 border-b-dashed border-black"
                     >
                       Blog
@@ -55,7 +52,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link
-                      to="#"
+                      to="/pages/project"
                       className="block hover:font-semibold hover:bg-gray-300 px-5 py-3 "
                     >
                       Project
@@ -81,31 +78,28 @@ const Navbar = () => {
         </div>
 
         {/* mobile */}
-        <div className="flex justify-between sm:hidden p-3 list-none">
+        <div className="flex justify-between sm:hidden p-5 list-none sticky top-0 z-100">
+          <div className="text-xl">Sabnam</div>
 
-            <div>Sabnam</div>
+          <ul className="hidden md:flex space-x-5">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
 
-            <ul className="hidden md:flex space-x-5">
-              <li>Home</li>
-              <li>About</li>
-              <li>Contact</li>
-            </ul>
-
-            <div className="sm:hidden" onClick={handleClick}>
-              <Menu />
-              {hamburgerMenu ? (
-                <ul className="flex flex-col items-center justify-center">
-                  <li>Home</li>
-                  <li>About</li>
-                  <li>Contact</li>
-                </ul>
-              ) : (
-                ""
-              )}
-            </div>
-
+          <div className="sm:hidden" onClick={handleClick}>
+            <Menu />
+            {hamburgerMenu ? (
+              <ul className="flex flex-col">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+              </ul>
+            ) : (
+              ""
+            )}
+          </div>
         </div>
-        
       </nav>
     </>
   );
