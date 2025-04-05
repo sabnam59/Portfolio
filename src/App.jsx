@@ -6,6 +6,8 @@ import Contact from "./pages/contact";
 import Home from "./pages/Home";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Project from "./pages/Project";
+import Blogdetails from "./pages/Blogdetails";
+import Projectdetails from "./pages/Projectdetails";
 
 
 export default function App() {
@@ -18,7 +20,9 @@ export default function App() {
     <Route path="/about" element={<About/>} />
     <Route path="/contact" element={<Contact/>} />
     <Route path="/pages/blog" element={<Blog/>} />
+    <Route path="/pages/blog/:id" element={<Blogdetails/>} />
     <Route path="/pages/project" element={<Project/>} />
+    <Route path="/pages/project/:id" element={<Projectdetails/>} />
    </Routes>
    <Footer/>
    </BrowserRouter>

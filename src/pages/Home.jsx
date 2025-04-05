@@ -19,7 +19,7 @@ const Home = () => {
         <div className="xl:p-40 lg:pt-32 pt-10 p-5 md:p-20 lg:pl-20">
           <h1 className="text-xl sm:text-5xl md:text-6xl font-semibold leading-tight mb-6">
             H!, This is
-            <br></br>
+            <br/>
             <a href="#" className="text-purple-500">
               Sabnam Karki
             </a>
