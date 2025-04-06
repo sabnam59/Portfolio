@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Card = (props) => {
-  console.log(props.id);
+  // console.log(props.id);
 
-  console.log(props.dpath);
+  // console.log(props.dpath);
 
   return (
     // <Link to={`/pages/project/${props.id}`}> 
