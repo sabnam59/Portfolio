@@ -1,7 +1,17 @@
+import { Facebook, Github, Instagram, Linkedin } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+
+ const socialMediaLink = {
+   github: "https://github.com/sabnam59",
+   linkedin: "https://www.linkedin.com/in/sabnam-karke-3927aa306/",
+   instagram: "https://www.instagram.com/___sabuuuuu___/",
+   facebook : "https://www.facebook.com/sabu.karkee.9"
+ };
+
+// adkyo tw i think you know how to access object value
   return (
     <footer className="bg-black text-white py-20">
       <div className="mx-auto md:pl-16 px-5 xl:max-w-7xl max-w-6xl xl:px-8">
@@ -43,23 +53,25 @@ const Footer = () => {
             </h2>
             <ul className="flex space-x-4">
               <li className="text-xl xl:text-2xl hover:text-gray-400">
-                <Link to="https://github.com/sabnam59">
-                  <i className="fa-brands fa-github"></i>{" "}
+                {/* for dynamic value we use curly braces and 
+                when we want to write js expression inside return( we use curly braces right?) yeah */}
+                <Link to={socialMediaLink.github} target="_blank">
+                  <Github />
                 </Link>
               </li>
               <li className="text-xl xl:text-2xl hover:text-gray-400">
-                <Link to="https://www.linkedin.com/in/sabnam-karke-3927aa306/">
-                  <i className="fa-brands fa-linkedin"></i>
+                <Link to={`${socialMediaLink.linkedin}`}>
+                  <Linkedin />
                 </Link>
               </li>
               <li className="text-xl xl:text-2xl hover:text-gray-400">
-                <Link to="https://www.instagram.com/___sabuuuuu___/">
-                  <i className="fa-brands fa-instagram"> </i>
+                <Link to={`${socialMediaLink.instagram}`}>
+                  <Instagram />
                 </Link>
               </li>
               <li className="text-xl xl:text-2xl hover:text-gray-400">
-                <Link to="https://www.facebook.com/sabu.karkee.9">
-                  <i className="fa-brands fa-facebook"> </i>
+                <Link to={`${socialMediaLink.facebook}`}>
+                  <Facebook />
                 </Link>
               </li>
             </ul>

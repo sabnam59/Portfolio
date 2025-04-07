@@ -25,7 +25,6 @@ const Navbar = () => {
             <Link
               to="/about"
               className="hover:text-amber-400 self-center"
-              href="/about"
             >
               About
             </Link>

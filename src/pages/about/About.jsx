@@ -1,5 +1,5 @@
 import React from "react";
-import Aboutcard from "../components/Aboutcard";
+import Aboutcard from "../../components/Aboutcard";
 
 const About = () => {
   const aboutContent = [

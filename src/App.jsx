@@ -1,13 +1,13 @@
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import About from "./pages/About";
-import Blog from "./pages/Blog";
-import Contact from "./pages/contact";
+import Blog from "./pages/blog/Blog";
+import Contact from "./pages/contact/Contact";
 import Home from "./pages/Home";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
-import Project from "./pages/Project";
-import Blogdetails from "./pages/Blogdetails";
-import Projectdetails from "./pages/Projectdetails";
+import Project from "./pages/project/Project";
+import Blogdetails from "./pages/blog/Blogdetails";
+import Projectdetails from "./pages/Project/Projectdetails";
+import About from "./pages/about/About";
 
 
 export default function App() {
