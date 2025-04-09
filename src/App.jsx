@@ -4,10 +4,10 @@ import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Blogdetails from "./pages/blog/Blogdetails";
-import Projectdetails from "./pages/Project/Projectdetails";
+import Projectdetails from "./pages/project/Projectdetails";
 import About from "./pages/about/About";
 import NotFound from "./components/NotFound";
-import Project from "./pages/Project/Project";
+import Project from "./pages/project/Project";
 import Gallery from "./pages/galley/Gallery";
 import Home from "./pages/home/Home";
 
