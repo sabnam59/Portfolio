@@ -11,7 +11,6 @@ const Footer = () => {
    facebook : "https://www.facebook.com/sabu.karkee.9"
  };
 
-// adkyo tw i think you know how to access object value
   return (
     <footer className="bg-black text-white py-20">
       <div className="mx-auto md:pl-16 px-5 xl:max-w-7xl max-w-6xl xl:px-8">
@@ -53,8 +52,6 @@ const Footer = () => {
             </h2>
             <ul className="flex space-x-4">
               <li className="text-xl xl:text-2xl hover:text-gray-400">
-                {/* for dynamic value we use curly braces and 
-                when we want to write js expression inside return( we use curly braces right?) yeah */}
                 <Link to={socialMediaLink.github} target="_blank">
                   <Github />
                 </Link>

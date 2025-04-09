@@ -28,7 +28,7 @@ const Navbar = () => {
             >
               About
             </Link>
-            <Link to="#" className="hover:text-amber-400 self-center">
+            <Link to="/gallery" className="hover:text-amber-400 self-center">
               Gallery
             </Link>
 
