@@ -17,7 +17,7 @@ const Navbar = () => {
       <nav className="sticky top-0 z-50 bg-black text-white">
         <div
           className="shadow py-10 px-5 md:pl-16
-          flex justify-between md:flex  xl:pl-40 xl:pr-16 items-center lg:justify  "
+          flex justify-between xl:pl-40 xl:pr-10 items-center "
         >
           <div className="bold items-center flex text-xl lg:text-4xl xl:text-5xl  md:hidden lg:flex">
             Sabnam
@@ -29,20 +29,30 @@ const Navbar = () => {
 
           <div
             onClick={handleClick}
-            className={`bg-white text-black md:bg-black md:text-white md:top-0 right-0 flex flex-col p-5 font-semibold gap-4 transition-all md:flex-row  md:gap-16 lg:gap-10 
+            className={`bg-white text-black md:bg-black md:text-white lg:top-8 md:top-4 lg:right-9 md:right-8 p-5 font-semibold gap-4 transition-all md:text-l lg:text-l xl:text-xl md:flex-row md:gap-16 lg:gap-10 
               
               ${
                 hamburgerMenu
-                  ? "absolute top-20 right-0 block rounded-md "  
-                  : "hidden md:flex md:text-l lg:text-l xl:text-xl "
+                  ? "absolute top-20 right-0 rounded-md flex flex-col"
+                  : "hidden md:flex fixed"
               }`}
           >
-            <Link to="/" className="hover:text-amber-400 self-center ">
+            <Link
+              to="/"
+              onClick={handleClick}
+              className="hover:text-amber-400 self-center "
+            >
               Home
             </Link>
-            <Link to="/about" className="hover:text-amber-400 self-center">
+
+            <Link
+              to="/about"
+              onClick={handleClick}
+              className="hover:text-amber-400 self-center"
+            >
               About
             </Link>
+
             <Link to="/gallery" className="hover:text-amber-400 self-center ">
               Gallery
             </Link>
@@ -59,6 +69,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/pages/blog"
+                      onClick={handleClick}
                       className="block  hover:bg-gray-300 hover:font-semibold px-4 py-3 border-b-dashed border-black"
                     >
                       Blog
@@ -67,6 +78,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/pages/project"
+                      onClick={handleClick}
                       className="block hover:font-semibold hover:bg-gray-300 px-5 py-3 "
                     >
                       Project
@@ -78,6 +90,7 @@ const Navbar = () => {
 
             <Link
               to="/contact"
+              onClick={handleClick}
               className="py-2 hover:text-amber-500 self-center"
             ></Link>
 
