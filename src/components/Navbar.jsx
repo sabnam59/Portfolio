@@ -29,12 +29,12 @@ const Navbar = () => {
 
           <div
             onClick={handleClick}
-            className={`bg-white text-black md:bg-black md:text-white md:top-10 right-16 flex flex-col p-5 font-semibold gap-4 transition-all md:flex-row  md:gap-16 lg:gap-10 
+            className={`bg-white text-black md:bg-black md:text-white md:top-0 right-0 flex flex-col p-5 font-semibold gap-4 transition-all md:flex-row  md:gap-16 lg:gap-10 
               
               ${
                 hamburgerMenu
-                  ? "absolute top-20 block rounded-md "  
-                  : "hidden md:flex md:text-l lg:text-l xl:text-xl"
+                  ? "absolute top-20 right-0 block rounded-md "  
+                  : "hidden md:flex md:text-l lg:text-l xl:text-xl "
               }`}
           >
             <Link to="/" className="hover:text-amber-400 self-center ">
