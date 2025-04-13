@@ -7,7 +7,7 @@ const Blog = () => {
   const [myBlogs, setMyBlogs] = useState(BlogData);
 
   const [userTypedWord, setUserTypedWord] = useState("");
-
+  
   const handleChange = (e) => {
     setUserTypedWord(e.target.value);
   };
@@ -32,7 +32,7 @@ const Blog = () => {
       </div>
 
       {filteredBlogs.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 px-10 py-20 bg-black text-white gap-24 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 px-4 py-20 bg-black text-white gap-24 lg:px-24 md:px-12 md:gap-12 lg:gap-24">
           {filteredBlogs.map((blog) => (
             <Card
               key={blog.BlogId}

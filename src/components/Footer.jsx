@@ -32,16 +32,16 @@ const Footer = () => {
 
             <ul className="space-y-3 text-l xl:text-xl">
               <li>
-                <Link to="/About">About</Link>
+                <Link to="/about">About</Link>
               </li>
               <li>
-                <Link to="#">Gallery</Link>
+                <Link to="/gallery">Gallery</Link>
               </li>
               <li>
                 <Link to="#">Project</Link>
               </li>
               <li>
-                <Link to="</contact>">Contact</Link>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>
