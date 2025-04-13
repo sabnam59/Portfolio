@@ -18,7 +18,6 @@ const Contact = () => {
   const handleSubmit = async(e)=>{
 
     e.preventDefault()
-    console.log("handleSubmit vitra ko code chalo hai tw")
 
     // console.log(contactData)
     const data = {

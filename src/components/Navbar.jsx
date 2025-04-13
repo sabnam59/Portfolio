@@ -28,7 +28,7 @@ const Navbar = () => {
 
           <div
             onClick={handleClick}
-            className={`bg-white text-black md:bg-black md:text-white lg:top-10 md:top-6 lg:right-4 md:right-8 xl:right-10 p-5 md:py-1 font-semibold gap-4 transition-all md:text-l lg:text-xl xl:text-2xl md:flex-row md:gap-12 lg:gap-10 
+            className={`bg-white text-black md:bg-black md:text-white lg:top-10 md:top-7 lg:right-4 md:right-8 xl:right-10 p-5 md:py-1 font-semibold gap-4 transition-all md:text-l lg:text-xl xl:text-2xl md:flex-row md:gap-12 lg:gap-10 
               
               ${
                 hamburgerMenu
