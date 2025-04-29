@@ -10,6 +10,7 @@ import NotFound from "./components/NotFound";
 import Project from "./pages/project/Project";
 import Gallery from "./pages/galley/Gallery";
 import Home from "./pages/home/Home";
+import {ToastContainer} from 'react-toastify';
 
 
 export default function App() {
@@ -32,6 +33,9 @@ export default function App() {
    </Routes>
    <Footer/>
    </BrowserRouter>
+   <ToastContainer  
+   position="top-center"
+   autoClose={2000} />
    </>
   );
 }

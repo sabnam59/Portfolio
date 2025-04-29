@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import {toast} from 'react-toastify';
 
 const Contact = () => {
 
@@ -27,6 +28,20 @@ const Contact = () => {
     }
   
     await axios.post("https://getform.io/f/byvkdmda",data);
+    
+
+    toast.success('Form Sbumitted Successfully', {
+      position :"top-center",
+      // autoClose: 300,
+      });
+
+   setcontactData(
+    {
+      name: "",
+      email: "",
+      message: "",
+    }
+   )
 
   }
   console.log(contactData);

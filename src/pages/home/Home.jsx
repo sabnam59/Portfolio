@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <>
       <section id="home" className="relative bg-black text-white">
-        {/* <div className="absolute right-13 top-5   bg-white  bg-[url('/images/myphoto1.png')] h-100 w-100 rounded-lg"></div> */}
-        {/* <div
+        {/* <div className="relative right-13 top-5   bg-white  bg-[url('/images/myphoto1.png')] rounded-lg"></div>
+        <div
           style={{
             backgroundImage: "url('/images/myphoto1.png')",
             height: "300px",
@@ -18,7 +18,7 @@ const Home = () => {
 
         <div className="xl:p-40 lg:pt-32 pt-10 p-5 md:p-20 lg:pl-20">
           <h1 className="text-xl sm:text-5xl md:text-4xl font-semibold leading-tight mb-6">
-            H!, This is
+            Hi, 
             <br/>
             <a href="#" className="text-purple-500">
               Sabnam Karki
@@ -43,8 +43,8 @@ const Home = () => {
 
           <Link to="#">
             {" "}
-            <button className="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-amber-600 mb-14 ">
-              <span className=" bg-yellow-600 rounded-lg cursor-pointer px-8 py-3 text-xl font-semibold text-black underline">
+            <button className="transition delay-150 duration-300  mb-14 ">
+              <span className="text-white bg-yellow-600 hover:bg-transparent border-2 border-yellow-600  rounded-lg cursor-pointer px-6 py-3 text-xl font-semibold">
                 Download CV
               </span>{" "}
             </button>
@@ -52,11 +52,11 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="bg-yellow-600 py-20 text-white mt-1">
+      <div className="bg-yellow-600 py-12 text-white">
         <div className="grid grid-cols-2 lg:grid-cols-4 mx-auto md:max-w-7xl md:pl-20 px-5 gap-9">
           <div className="flex space-x-6">
             <h1 className="font-semibold text-6xl">1</h1>
-            <ul className="font-bold pt-2">
+            <ul className="font-bold lg:text-xl pt-2">
               <li>Coders</li>
               <li>Degree</li>
             </ul>
@@ -64,7 +64,7 @@ const Home = () => {
 
           <div className="flex space-x-6">
             <h1 className="font-semibold text-6xl">3</h1>
-            <ul className="font-bold pt-2">
+            <ul className="font-bold lg:text-xl pt-2">
               <li>Project</li>
               <li>Completed</li>
             </ul>
@@ -72,7 +72,7 @@ const Home = () => {
 
           <div className="flex space-x-6">
             <h2 className="text-6xl font-semibold">1</h2>
-            <ul className="font-bold pt-2">
+            <ul className="font-bold lg:text-xl pt-2">
               <li>Satisfied</li>
               <li>Client</li>
             </ul>
@@ -80,7 +80,7 @@ const Home = () => {
 
           <div className="flex space-x-6">
             <h2 className="text-6xl font-semibold">0</h2>
-            <ul className="font-bold pt-2">
+            <ul className="font-bold lg:text-xl pt-2">
               <li>Finished</li>
               <li>Project</li>
             </ul>

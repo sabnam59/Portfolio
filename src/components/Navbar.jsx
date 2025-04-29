@@ -18,8 +18,10 @@ const Navbar = () => {
           className="shadow py-10 px-5 md:pl-16
           flex justify-between xl:pl-40 xl:pr-10 items-center "
         >
-          <div className="bold items-center flex text-xl lg:text-4xl xl:text-5xl  md:hidden lg:flex">
+          <div  className="bold items-center flex text-xl lg:text-4xl xl:text-5xl  md:hidden lg:flex">
+            <Link to="/">
             Sabnam
+            </Link>
           </div>
 
           <div className="sm:hidden" onClick={handleClick}>
@@ -36,13 +38,13 @@ const Navbar = () => {
                   : "hidden md:flex fixed"
               }`}
           >
-            <Link
+            {/* <Link
               to="/"
               onClick={handleClick}
-              className="hover:text-amber-400 self-center "
+              className="hover:text-amber-400 self-center"
             >
               Home
-            </Link>
+            </Link> */}
 
             <Link
               to="/about"
@@ -94,10 +96,8 @@ const Navbar = () => {
             >Contact</Link>
 
             <button className="items-center cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
-              <span className=" border-2 border-yellow-600 px-5 py-2 rounded-md hover:text-amber-400">
-                Hire Me
-                <i className="fa-solid fa-angles-right"></i>
-              </span>
+              <span className=" border-2 border-yellow-600 px-6 py-2 rounded-md ">
+                Hire Me  </span>
             </button>
           </div>
         </div>
