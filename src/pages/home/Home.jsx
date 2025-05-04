@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import cvFile from 'sabnam.resume.pdf';
+
 
 const Home = () => {
   return (
@@ -41,7 +43,7 @@ const Home = () => {
             <span>Git |</span>
           </div>
 
-          <Link to="#">
+          <Link to="{cvFile}">
             {" "}
             <button className="transition delay-150 duration-300  mb-14 ">
               <span className="text-white bg-yellow-600 hover:bg-transparent border-2 border-yellow-600  rounded-lg cursor-pointer px-6 py-3 text-xl font-semibold">
