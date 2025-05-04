@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import cvFile from 'sabnam.resume.pdf';
+import cvFile from '../../assets/sabnam.resume.pdf';
 
 
 const Home = () => {
@@ -43,14 +43,14 @@ const Home = () => {
             <span>Git |</span>
           </div>
 
-          <Link to="{cvFile}">
+          <a href={cvFile}download target="_blank" rel="noopener noreferrer">
             {" "}
             <button className="transition delay-150 duration-300  mb-14 ">
               <span className="text-white bg-yellow-600 hover:bg-transparent border-2 border-yellow-600  rounded-lg cursor-pointer px-6 py-3 text-xl font-semibold">
                 Download CV
               </span>{" "}
             </button>
-          </Link>
+          </a>
         </div>
       </section>
 
