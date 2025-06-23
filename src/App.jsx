@@ -20,9 +20,9 @@ export default function App() {
    <Navbar/>
    <Routes>
     <Route path="/" element={<Home/>}/>
-    {/* /about ayo vane about page dekhako xa right? yes */}
+     
     <Route path="/about" element={<About/>} />
-    {/* / paxi junai path ayeni tyo path vetena vane yo notfound component dekhiney vayo hai tw lets see it works or not?oka? okay */}
+
     <Route path="/contact" element={<Contact/>} />
     <Route path="/pages/blog" element={<Blog/>} />
     <Route path="/pages/blog/:id" element={<Blogdetails/>} />

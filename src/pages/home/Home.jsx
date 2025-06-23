@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import cvFile from '../../assets/sabnam.resume.pdf';
 
 
-const Home = () => {
+const Home = () => {    
   return (
     <>
       <section id="home" className="relative bg-black text-white">
@@ -17,12 +17,12 @@ const Home = () => {
             backgroundPosition: "left",
           }}
         ></div> */}
-
+    
         <div className="xl:p-40 lg:pt-32 pt-10 p-5 md:p-20 lg:pl-20">
           <h1 className="text-xl sm:text-5xl md:text-4xl font-semibold leading-tight mb-6">
-            Hi, 
+            Hi, I am
             <br/>
-            <a href="#" className="text-purple-500">
+            <a href="#" className="text-yellow-500">
               Sabnam Karki
             </a>
           </h1>

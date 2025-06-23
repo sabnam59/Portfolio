@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col space-py-5">
-            <h2 className="Font-bold text-2xl xl:text-3xl mb-7 underline underline-offset-4">
+            <h2 className="Font-bold text-2xl xl:text-3xl mb-7">
               Quick Links
             </h2>
 
@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h2 className="Font-bold text-2xl xl:text-3xl mb-5 underline underline-offset-4">
+            <h2 className="Font-bold text-2xl xl:text-3xl mb-5">
               Follow Me
             </h2>
             <ul className="flex space-x-4">
@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
 
           <div className="mb-5">
-            <h2 className="Font-bold text-2xl xl:text-3xl mb-5 underline underline-offset-4">
+            <h2 className="Font-bold text-2xl xl:text-3xl mb-5">
               Contact Me
             </h2>
             <p className="xl:text-xl">
